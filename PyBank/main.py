@@ -39,6 +39,8 @@ with open(file_path, 'r') as csvfile:
     max_profit_month = months[change_in_profit_loss.index(max_profit_change) + 1]
     min_loss_month = months[change_in_profit_loss.index(min_loss_change) + 1]
 
+    
+
 print("Financial Analysis")
 print("----------------------------")
 print(f"Total Months: {total_months}")
