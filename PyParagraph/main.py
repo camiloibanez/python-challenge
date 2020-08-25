@@ -1,7 +1,14 @@
 import os
 
-file_path = os.path.join("raw_data", "paragraph_1.txt")
+file_path1 = os.path.join("raw_data", "paragraph_1.txt")
 
-paragraph = open(file_path, "r")
+def paragraphSummary(file_path):
+    paragraph = open(file_path, "r")
+    
+    paragraph = paragraph.read()
 
-print(paragraph.read())
+    words = paragraph.split(" ")
+    word_count = len(words)
+
+    print(word_count)
+paragraphSummary(file_path1)
