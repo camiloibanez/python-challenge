@@ -33,6 +33,11 @@ def paragraphSummary(file_path):
     
     avg_sentence_length = np.mean(sentence_lengths)
 
-    print(avg_sentence_length)
+    print("Paragraph Analysis")
+    print("-----------------")
+    print(f"Approximate Word Count: {word_count}")
+    print(f"Approximate Sentence Count: {sentence_count}")
+    print(f"Average Letter Count: {avg_letter_count}")
+    print(f"Average Sentence Count: {avg_sentence_length}")
 
 paragraphSummary(file_path1)
