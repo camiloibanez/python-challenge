@@ -4,6 +4,8 @@ import numpy as np
 
 file_path1 = os.path.join("raw_data", "paragraph_1.txt")
 
+file_path2 = os.path.join("raw_data", "paragraph_2.txt")
+
 
 def paragraphSummary(file_path):
     paragraph = open(file_path, "r")
@@ -41,3 +43,5 @@ def paragraphSummary(file_path):
     print(f"Average Sentence Count: {avg_sentence_length}")
 
 paragraphSummary(file_path1)
+print("")
+paragraphSummary(file_path2)
