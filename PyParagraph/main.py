@@ -24,6 +24,15 @@ def paragraphSummary(file_path):
     
     avg_letter_count = round(np.mean(word_lengths), 1)
 
-    print(avg_letter_count)
+    sentence_lengths = []
+
+    for i in np.arange(0, sentence_count):
+        sentence_length = sentences[i].split(" ")
+        sentence_length = len(sentence_length)
+        sentence_lengths.append(sentence_length)
+    
+    avg_sentence_length = np.mean(sentence_lengths)
+
+    print(avg_sentence_length)
 
 paragraphSummary(file_path1)
